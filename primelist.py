@@ -33,7 +33,7 @@ class PrimeList:
 		if number < 2:
 			return False
 		if number > self.max_prime - 1:
-			#print "Asking for what I dont have!"
+			print "Asking for what I dont have!",number, "BRUTE FORCE!"
 			return self._isprime(number)
 		return self.primelookup[number]
 
