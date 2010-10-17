@@ -32,7 +32,7 @@ class PrimeList:
         def remainder(n):
             return n // 60
         
-	def initialise_list(self,upto):
+	dePrf initialise_list(self,upto):
             self.primelookup.extend([0]*upto)
             for prime in self.primelist:
                 self.primelookup[prime] = 1
