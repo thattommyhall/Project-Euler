@@ -22,7 +22,7 @@ def gen_primes():
         if next < smallest:
             yield next
             c.next()
-            update_composites(2*next,next)
+            update_composites(next**2,next)
                         
 g=gen_primes()
     
