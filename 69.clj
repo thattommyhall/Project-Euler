@@ -18,12 +18,11 @@
 			(/ 1 %))
 		    (distinct (primefactors n))))))
 
-(println (apply max-key #(/ % (totient %)) (range 2 11)))
+(time (println (apply max-key #(/ % (totient %)) (range 2 10001))))
 
-(println (apply max-key #(/ % (totient %)) (range 2 1000001)))
+(time (println (apply max-key #(/ % (totient %)) (range 2 10001))))
 
 
-	       
 	
 
 
