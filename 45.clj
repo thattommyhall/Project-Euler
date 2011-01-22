@@ -31,4 +31,4 @@
 		  (iterate incsmallest
 			   [triangles pentagonals hexagonals]))))
      
-(println (take 1 (drop-while #(< % 40756) results)))     
+(time (println (take 1 (drop-while #(< % 40756) results))))
