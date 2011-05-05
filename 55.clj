@@ -6,7 +6,7 @@
 (defn palendrome? [somestring]
   (= somestring
      (reverse-string somestring)))
-  
+
 (defn is-lychrel?
   ([n] (is-lychrel? n 0))
   ([n depth]
@@ -14,10 +14,10 @@
        (cond (and (> depth 0)
 									(palendrome? numstring))
 						 false
-						 ;
+																				
 						 (> depth 50)
 						 true 
-	           ;
+																				
 						 :else
 						 (recur (+ n
 											 (bigint (reverse-string numstring)))
