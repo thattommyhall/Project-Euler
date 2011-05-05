@@ -1,8 +1,7 @@
 (ns e55
-  (:use clojure.string :only [reverse] :rename {revers reverse-string} ))
+  (:require [clojure.string :only reverse]))
 
-;(defn reverse-string [somestring]
-;  (clojure.string/reverse somestring))
+(def reverse-string clojure.string/reverse)
 
 (defn palendrome? [somestring]
   (= somestring
