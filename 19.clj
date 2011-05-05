@@ -47,12 +47,11 @@
  (println
   (count 
    (for [[day date month year] daydates
-	 :when (> year 1900)
-	 :when (and (= day :sun)
-		    (= date 1))
-	 ]
+         :when (> year 1900)
+         :when (and (= day :sun)
+                    (= date 1))]
      [day date month year]))))
- 
+
 
 
   
