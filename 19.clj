@@ -1,7 +1,6 @@
 (defn days []
   (cycle [:mon :tues :weds :thurs :fri :sat :sun]))
 
-
 (defn leap-year? [year]
      (cond (= (rem year 400)
 	      0)
@@ -21,12 +20,12 @@
 
 (defn days-in-month [month year] 
   (cond (= month :sept) 30
-	(= month :april) 30
-	(= month :june) 30
-	(= month :nov) 30
-	(= month :feb) (if (leap-year? year)
-			 29
-			 28)
+				(= month :april) 30
+				(= month :june) 30
+				(= month :nov) 30
+				(= month :feb) (if (leap-year? year)
+												 29
+												 28)
 	;
 	:else 31))
 
@@ -59,4 +58,6 @@
   
     
       
+
+
 
