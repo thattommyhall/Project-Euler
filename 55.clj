@@ -12,15 +12,15 @@
   ([n depth]
      (let [numstring (str n)]
        (cond (and (> depth 0)
-									(palendrome? numstring))
-						 false
-																				
-						 (> depth 50)
-						 true 
-																				
-						 :else
-						 (recur (+ n
-											 (bigint (reverse-string numstring)))
-										(inc depth))))))
+                  (palendrome? numstring))
+             false
+						 
+             (> depth 50)
+             true 
+						 
+             :else
+             (recur (+ n
+                       (bigint (reverse-string numstring)))
+                    (inc depth))))))
 
 (println (count (filter #(is-lychrel? %) (range 10001))))
