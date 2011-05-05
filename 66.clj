@@ -2,13 +2,13 @@
   (:use clojure.contrib.math))
 
 (defn y [x D]
-	(sqrt (/ (- (* x x)
-									 1)
-					 D)))
+  (sqrt (/ (- (* x x)
+                   1)
+           D)))
 
 (defn find-minx [D]
-	(do (println D)
-			(first (filter #(integer? (y % D)) (iterate inc 2)))))
+  (do (println D)
+      (first (filter #(integer? (y % D)) (iterate inc 2)))))
 
 ;(println (map find-minx [2 3 5 6 7]))
 
