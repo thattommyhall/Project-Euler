@@ -23,4 +23,4 @@
                        (bigint (reverse-string numstring)))
                     (inc depth))))))
 
-(println (count (filter #(is-lychrel? %) (range 10001))))
+(println (count (filter is-lychrel? (range 10001))))

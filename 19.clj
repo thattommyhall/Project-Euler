@@ -35,8 +35,8 @@
 
 (defn dates []
   (for [year (range 1900 2001)
-	month months
-	date (range 1 (inc (days-in-month month year)))]
+        month months
+        date (range 1 (inc (days-in-month month year)))]
     [date month year]))
 
 (def daydates (map cons (days) (dates)))

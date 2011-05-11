@@ -7,8 +7,9 @@
            D)))
 
 (defn find-minx [D]
-  (do (println D)
-      (first (filter #(integer? (y % D)) (iterate inc 2)))))
+  (do ;(println D)
+      (first (filter #(do (println %)
+                          (integer? (y % D))) (iterate inc 2)))))
 
 ;(println (map find-minx [2 3 5 6 7]))
 
