@@ -1,4 +1,4 @@
-(ns e55
+(ns e104 
   (:require [clojure.contrib.math :as math
              clojure.contrib.string :as string
              ]))
@@ -25,5 +25,8 @@
 (defn test-first [[pos last value]]
   (pandigital? (first-nine value)))
 
-(time (println (take 1 (filter (fn [[pos last value]]
-                                 (pandigital? (last-nine value))) fibs))))
+(time (println (ffirst (take 1 (filter test-first fibs)))))
+(time (println (ffirst (take 1 (filter test-last fibs)))))
+
+(time (println (ffirst (take 1 (filter #(and (test-first %)
+                                             (test-last %)) fibs)))))
