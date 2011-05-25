@@ -39,7 +39,7 @@
  (count 
   (for [[a b c per] (triples 100000000)
 	:when (= 0 (abs (- b a)))]
-  [a b c])))
+  [a b c]))
 
 
 
