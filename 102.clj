@@ -43,11 +43,6 @@
                       (angle-with-origin A C)
                       (angle-with-origin B C))))
 
-(defn sum-angles [A B C]
-  (+ (angle-with-origin A B)
-     (angle-with-origin A C)
-     (angle-with-origin B C)))
-
 (def t1 [[-340,495],[-153,-910],[835,-947]])
 (def t2 [[-175,41],[-421,-714],[574,-645]])
 
