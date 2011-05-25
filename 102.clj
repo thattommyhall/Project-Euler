@@ -1,8 +1,7 @@
 (ns e102
   (:require [clojure.contrib.math :as math]
             [clojure.contrib.string :as string]
-            [clojure.contrib.generic.math-functions :as gmath])
-  (:use (clojure.contrib.combinatorics)))
+            [clojure.contrib.generic.math-functions :as gmath]))
 
 (def input (slurp "triangles.txt"))
 
