@@ -26,8 +26,8 @@
 				(= month :feb) (if (leap-year? year)
 												 29
 												 28)
-	;
-	:else 31))
+                         ;
+        :else 31))
 
 
 (def months [:jan :feb :march :april :may :june :july :aug :sept :oct :nov :dec] )
@@ -52,6 +52,8 @@
                     (= date 1))]
      [day date month year]))))
 
+
+ 
 
 
   
